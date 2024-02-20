@@ -5,9 +5,9 @@ import { useCode } from "../contexts/EditorContext";
 const MonacoEditorComponent = () => {
   const [language, setLanguage] = useState("javascript");
   const [sampleCode, setSampleCode] = useState({
-    select_sample_code: `Before running the code for visualization, you need to modify the function as shown below. Instead of directly returning the result, it should return an object that contains the result and additional information. This allows us to visualize the execution of the function.
+    select_sample_code: `/* Before running the code for visualization, you need to modify the function as shown below. Instead of directly returning the result, it should return an object that contains the result and additional information. This allows us to visualize the execution of the function.
 
-    Example 1:
+Example 1:
 Before:
 
 function fn(n) {
@@ -124,7 +124,7 @@ const m = X.length;
 const n = Y.length;
 
 LCSRec(X, Y, m, n);
-
+*/
 `,
     fibonacci: `// run code to visualize..
     function fn(n) {
